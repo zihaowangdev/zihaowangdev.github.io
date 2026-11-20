@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Zihao Wang – Software Developer</title>
+  <meta name="description" content="Zihao Wang is a software developer with a Ph.D. in Computer Science, specializing in Java, algorithms, and production data-processing software. Based in Waterloo, Ontario.">
+  <meta property="og:title" content="Zihao Wang – Software Developer">
+  <meta property="og:description" content="Java developer with a Ph.D. in Computer Science. Publications, experience, and links.">
+  <meta property="og:type" content="website">
+  <style>
+    :root {
+      --bg: #fafaf7;
+      --surface: #ffffff;
+      --text: #1d2125;
+      --muted: #5b6470;
+      --line: #e2e4e8;
+      --accent: #1f5fbf;
+      --accent-hover: #174a96;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14171a;
+        --surface: #1b1f23;
+        --text: #e8eaed;
+        --muted: #9aa3ad;
+        --line: #2c3239;
+        --accent: #7fb0ff;
+        --accent-hover: #a9c9ff;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 56px 16px 72px; }
+    header { margin-bottom: 40px; }
+    h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.01em; }
+    .role { color: var(--muted); margin: 0 0 20px; font-size: 1.05rem; }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; list-style: none; }
+    .links a {
+      display: inline-block;
+      padding: 7px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .links a:hover { border-color: var(--accent); color: var(--accent); }
+    a { color: var(--accent); }
+    a:hover { color: var(--accent-hover); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+    section { margin-top: 40px; }
+    h2 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin: 0 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+    p { margin: 0 0 12px; }
+    ul { margin: 0; padding-left: 1.2rem; }
+    li { margin-bottom: 8px; }
+    .job { margin-bottom: 4px; }
+    .job-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 16px; margin-bottom: 6px; }
+    .job-title { font-weight: 600; }
+    .meta { color: var(--muted); font-size: 0.95rem; }
+    .pubs { list-style: none; padding: 0; }
+    .pubs li { margin-bottom: 14px; }
+    .pub-title { font-weight: 600; }
+    .edu { list-style: none; padding: 0; }
+    .edu li { margin-bottom: 10px; }
+    footer { margin-top: 56px; color: var(--muted); font-size: 0.9rem; }
+    @media (max-width: 480px) {
+      body { font-size: 16px; }
+      h1 { font-size: 1.8rem; }
+      .wrap { padding-top: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Zihao Wang</h1>
+      <p class="role">Software Developer · Ph.D. in Computer Science · Waterloo, Ontario</p>
+      <ul class="links">
+        <li><a href="https://www.linkedin.com/in/zihaowangdev">LinkedIn</a></li>
+        <li><a href="https://github.com/zihaowangdev">GitHub</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <section aria-labelledby="about">
+        <h2 id="about">About</h2>
+        <p>
+          I'm a software developer with nearly four years of experience building and optimizing
+          production Java software on a small team. I work on commercial mass spectrometry software
+          for protein and antibody analysis, where I owned features end to end, improved memory use
+          and processing speed, and tracked down deadlocks and memory leaks in large production codebases.
+        </p>
+        <p>
+          My background is in algorithms and computational complexity: six peer-reviewed research papers
+          on formal languages and DNA computing, and a Ph.D. thesis on the same topics. I'm currently broadening my web and cloud
+          experience, studying Spring Boot, PostgreSQL, React, and AWS, and I'm looking for software
+          engineering and backend roles in the Waterloo area, the Toronto area, or remote in Canada.
+        </p>
+      </section>
+
+      <!-- Add a Projects section here once your GitHub project is ready:
+      <section aria-labelledby="projects">
+        <h2 id="projects">Projects</h2>
+        <p><strong>Project name</strong> – one sentence on what it does and the stack
+        (Java, Spring Boot, PostgreSQL, React). <a href="https://github.com/...">Code</a> · <a href="https://...">Live demo</a></p>
+      </section>
+      -->
+
+      <section aria-labelledby="experience">
+        <h2 id="experience">Experience</h2>
+        <div class="job">
+          <div class="job-head">
+            <span class="job-title">Software Developer, Bioinformatics Solutions Inc.</span>
+            <span class="meta">Sep 2022 – Jun 2026</span>
+          </div>
+          <ul>
+            <li>Reduced memory use by 40% and improved processing speed by 60% on a benchmark dataset in GlycanFinder, using result caching, Akka-based multithreading, and batching.</li>
+            <li>Diagnosed and fixed deadlocks, memory leaks, and other performance problems in the production Java codebases of GlycanFinder and PEAKS Studio.</li>
+            <li>Built a Java analysis module for antibody sequencing and an in-house laboratory application integrated with Python workflows on Linux.</li>
+            <li>Worked directly with customers and scientists to turn requirements into software and redesign the JavaFX user interface.</li>
+          </ul>
+        </div>
+        <p class="meta" style="margin-top:10px">Earlier: Graduate teaching and research assistant at the University of Waterloo (2018–2022) and Western University (2016–2018).</p>
+      </section>
+
+      <section aria-labelledby="skills">
+        <h2 id="skills">Skills</h2>
+        <p><strong>Top skills:</strong> Java · Algorithms · Data Structures · Multithreaded Development · Optimizing Performance</p>
+        <p><strong>Languages and tools:</strong> Java, Python, SQL, Akka, JavaFX, Protocol Buffers, JUnit, Maven, Git, Linux, Jira</p>
+        <p><strong>Engineering:</strong> Unit Testing, Software Testing, Debugging, Software Design, Object-Oriented Programming, Algorithm Design, Agile Methodologies</p>
+        <p><strong>Computer science:</strong> Computational Complexity, Formal Languages, Operating Systems, Computer Architecture, Software Verification, Image Compression, Computer Vision, Discrete Mathematics, Linear Algebra</p>
+        <p><strong>Coursework languages:</strong> C, C++, Assembly Language</p>
+      </section>
+
+      <section aria-labelledby="publications">
+        <h2 id="publications">Publications</h2>
+        <ul class="pubs">
+          <li>
+            <span class="pub-title"><a href="https://doi.org/10.1016/j.mcpro.2025.101088">Sequencing of Polyclonal Antibodies by Integrating Intact Mass, Middle-Down, and De Novo Bottom-Up Mass Spectrometry</a></span><br>
+            <span class="meta">Molecular &amp; Cellular Proteomics, 2025</span>
+          </li>
+          <li>
+            <span class="pub-title"><a href="https://doi.org/10.1088/1367-2630/ac3883">As Good as It Gets: A Scaling Comparison of DNA Computing, Network Biocomputing, and Electronic Computing Approaches to an NP-complete Problem</a></span><br>
+            <span class="meta">New Journal of Physics, 2021</span>
+          </li>
+          <li>
+            <span class="pub-title"><a href="https://doi.org/10.1007/s11047-021-09867-x">Conjugate Word Blending: Formal Model and Experimental Implementation by XPCR</a></span><br>
+            <span class="meta">Natural Computing, 2021</span>
+          </li>
+          <li>
+            <span class="pub-title"><a href="https://doi.org/10.25596/JALC-2021-255">Involutive Fibonacci Words</a></span><br>
+            <span class="meta">Journal of Automata, Languages and Combinatorics, 2021</span>
+          </li>
+          <li>
+            <span class="pub-title"><a href="https://doi.org/10.25596/jalc-2022-151">Primitivity of Atom Watson-Crick Fibonacci Words</a></span><br>
+            <span class="meta">Journal of Automata, Languages and Combinatorics, 2022</span>
+          </li>
+          <li>
+            <span class="pub-title"><a href="https://doi.org/10.3233/FI-2020-1877">Word Blending in Formal Languages</a></span><br>
+            <span class="meta">Fundamenta Informaticae, 2019</span>
+          </li>
+          <li>
+            <span class="pub-title"><a href="https://doi.org/10.1007/978-3-319-92435-9_6">Word Blending in Formal Languages: The Brangelina effect</a></span><br>
+            <span class="meta">Unconventional Computation and Natural Computation (UCNC), 2018</span>
+          </li>
+          <li>
+            <span class="pub-title"><a href="https://uwspace.uwaterloo.ca/handle/10012/18973">DNA Computing: Modelling in Formal Languages and Combinatorics on Words, and Complexity Estimation</a></span><br>
+            <span class="meta">Ph.D. thesis, University of Waterloo, 2022</span>
+          </li>
+          <li>
+            <span class="pub-title"><a href="https://uwo.scholaris.ca/items/ed07e9b9-7eb7-417b-b79b-bc910254fff4">Word Blending and Other Formal Models of Bio-operations</a></span><br>
+            <span class="meta">M.Sc. thesis, Western University, 2018</span>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="education">
+        <h2 id="education">Education</h2>
+        <ul class="edu">
+          <li><strong>Ph.D. in Computer Science</strong>, University of Waterloo, 2018–2022</li>
+          <li><strong>M.Sc. in Computer Science</strong>, Western University, 2016–2018</li>
+          <li><strong>B.Sc. (Western Scholars), Honors Specialization in Computer Science, with distinction</strong>, Western University, 2013–2016</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Zihao Wang</p>
+    </footer>
+  </div>
+</body>
+</html>
